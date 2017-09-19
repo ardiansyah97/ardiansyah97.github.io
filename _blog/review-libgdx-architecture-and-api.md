@@ -391,6 +391,117 @@ collection: blog
 
 <div id="graphics">
 	<h1 style="color:blue;">Graphics</h1>
+	<h2>Querying and Configuring Graphics</h2>
+		<p align="justify">
+			LibGDX memiliki API yang rumit yang memungkinkan kita memantau dan menampilkan permintaan. Perubahan mode tampilan tidak didukung oleh Android dan iOS.
+		</p>
+
+	<h2>Continuous & Non-Continuous Rendering</h2>
+		<p align="justify">
+			Secara default di libgdx, thread rendering memanggil metode render() class ApplicationListener secara terus menerus, dengan frekuensi yang bergantung pada perangkat keras (30-50-80 kali per detik) . Jika rendering terus menerus disetel ke false, metode render() akan dipanggil hanya jika hal-hal berikut terjadi:
+			<ul>
+				<li>An input event is triggered</li>
+				<li>Gdx.graphics.requestRendering() is called</li>
+				<li>Gdx.app.postRunnable() is called</li>
+			</ul>
+		</p>
+	<h2>Clearing The Screen</h2>
+		<p align="justify">
+			Untuk menghapus layar di Libgdx tidak seperti membersihkan layar dalam aplikasi OpenGL biasa. Satu-satunya perbedaan adalah bagaimana seseorang mengakses konteks OpenGL
+		</p>
+	<h2>Taking a Screenshot</h2>
+	<h2>Profiling</h2>
+		<p align="justify">
+			Mengupdate panggilan OpenGL aktual yang terjadi saat permainan berjalan seringkali tidak terlalu mudah dilakukan, karena libGDX mencoba untuk menghapus semua hal tingkat rendah. Untuk memungkinkan pengumpulan informasi ini, ada GLProfiler
+		</p>
+	<h2>Viewport</h2>
+		<p align="justify">
+			Saat berhadapan dengan layar yang berbeda, seringkali perlu diputuskan untuk menentukan strategi tertentu bagaimana ukuran dan rasio aspek layar yang berbeda harus ditangani. Camera and Stage mendukung strategi viewport yang berbeda, misalnya saat melakukan pemotretan melalui Camera.project (vec, viewportX, viewportY, viewportWidth, viewportHeight).
+		</p>
+	<h2>Utility Class</h2>
+		<p align="justify">
+			<ul>
+				<li>Rendering Shapes</li>
+					<p align="justify"> Terdapat link dokumentasi khusus untuk mempelajari pembuatan berbagai bentuk.</p>
+				<li>Texture & Texture Regions</li>
+					<p align="justify">menggunakan Spritebatch, Textureregions, and Sprites yang akan dibahas pada bab berikutnya</p>
+				<li>Meshes</li>
+					<p align="justify">Terdapat penjelasan tentang membuat dan merender mesh. Mesh sendiri adalah kumpulan verteks yang mendiskripsikan geometri untuk rendering</p>
+				<li>Shaders</li>
+					<p align="justify">Dalam OpenGL 2.0 ES semuanya dirender dengan shader. Shader merupakan program kecil yang berjalan pada GPU dan memproses data untuk dirender. Terdapat verteks shader(hanya mengeksekusi satu verteks) dan fragment shader(mengeksekusi setiap fragment). Selain itu, pada dokumentasi ini juga ada contoh sederhana program shader</p>
+				<li>Frame Buffer Objects</li>
+					<p align="justify">Terdapat link dokumentasi khusus untuk mempelajari framebuffer</p>
+
+			</ul>
+		</p>
+
+	<h2>2D Graphics</h2>
+		<p align="justify">
+			<ol>
+				<li>Spritebatch, Textureregions, and Sprites</li>
+					<p align="justify">Menggambar semua Spritebatch harus berada diantara begin dan end. Gambar non-spritebatch tidak digambar antara begin dan end. Texture class men-decode file gambar dan memasukkannya ke GPU memory. TextureRegion class menggambarkan persegi panjang di dalam texture dan berguna untuk menggambar sebagian texturenya. Sprite class menggambarkan baik daerah texture, geometri dimana ia akan di gambar, dan warnanya akan digambar.</p>
+				<li>Animation</li>
+					<p align="justify">Animasi di LibGdx menggunakan class Animation</p>
+				<li>Clipping</li>
+					<p align="justify">Clipping, with the use of scissorstack</p>
+				<li>Orthographic Camera</li>
+					<p align="justify">Orthographic Camera digunakan di lingkungan 2D karena menerapkan proyeksi paralel (orthographic) dan tidak ada faktor skala.</p>
+				<li>NinePatch</li>
+					<p align="justify">Gambar ninepatch adalah gambar degan area scretchable. Dengan properti tersebut seseorang dapat memuat gambar yang berulang ke daerah yang sangat kecil, atau berskala ke daerah yang sangat besar.</p>
+				<li>Bitmap font</li>
+					<p align="justify">LibGdx menggunakan bitmap files (png) untuk membuat font</p>
+				<li>2D Particle Effect</li>
+					<p align="justify">Menggunakan particle effect adalah mudah, load partikel yang telah di generate di ParticleEditor</p>
+				<li>Tile Maps</li>
+					<p align="justify">LibGdx memiliki generic maps API. Semua class yang terkait dengan map dapat ditemukan di package com.badlogic.gdx.maps</p>
+				<li>Scene2d</li>
+					<p align="justify">
+						Scene2d adalah 2d scene graph untuk membangun aplikasi dan UI dengan menggunakan hirarki aktor. Scene2d dilengkapi dengan baik untuk meletakkan, menggambar, dan menangani input untuk game menu, HUD overlays, tools, dan UI lainnya. Package scene2d.ui menyediakan banyak aktor dan utilitas lainnya yg khusus untuk membangun UI.
+					</p>
+			</ol>
+				
+						
+		</p>
+
+	<h2>3D Graphics</h2>
+		<b>Models</b>
+			<p align="justify">
+				Model mewakili aset 3D yang terdiri dari hierarki simpul, di mana masing-masing simpul merupakan kombinasi dari geometri (jala) dan material. Opsional sebuah model juga bisa berisi informasi tentang animasi dan / atau skinning.
+			</p>
+
+		<b>Materian and Environment</b>
+			<p align="justify">
+				<ul>
+					<li>Material</li>
+					<p align="justify"> Material adalah model (atau modelinstance) spesifik. Material disalin saat membuat ModelInstance, yang berarti bahwa mengubah material ModelInstance tidak akan mempengaruhi Model asli atau ModelInstances lainnya.</p>
+					<li>Environment</li>
+					<p align="justify">
+					Lingkungan mengandung nilai seragam yang spesifik untuk suatu lokasi. Misalnya, lampu merupakan bagian dari Lingkungan. Aplikasi sederhana mungkin hanya menggunakan Lingkungan, sementara aplikasi yang lebih kompleks mungkin menggunakan beberapa lingkungan bergantung pada lokasi ModelInstance.</p>
+					<li>Ligths</li>
+					<p align="justify">
+					Karena versi 1.5.7 Pencahayaan dipindahkan ke atribut, yang berarti Anda dapat menempelkan pencahayaan ke lingkungan atau material. Pencahayaan selalu digunakan dengan referensi. Pencahayaan harus disortir menurut kepentingannya.</p>
+					<li>Attributes</li>
+				</ul>
+
+			</p>
+
+		<b>3D Animation and Skinning</b>
+			<p align="justify">Model (dan ModelInstance) dapat berisi satu atau beberapa animasi. Animasi adalah urutan (keyframes) transformasi yang diterapkan pada satu atau lebih simpul model.</p>
+
+		<b>Importing Blender Model in LibGDX</b>
+			<p align="justify">Blender adalah pemodelan aplikasi open source yang dapat Anda gunakan untuk membuat model 3D, adegan dan animasi.</p>
+		
+		<b>3D Particle Effect</b>
+			<p align="justify">
+				Jenis Efek Partikel:
+				<ul>
+					<li>Billboards : sprite yang selalu menghadap kamera</li>
+					<li>PointSprites : menggambar sprite ke titik 3d tunggal. Mereka lebih sederhana daripada Billboards , tapi lebih efisien.</li>
+					<li>ModelInstance : sudah familiar dengan Anda jika Anda telah melakukan pekerjaan 3D di libgdx. Mereka adalah contoh model 3D. Tidak mengherankan, ini adalah jenis efek partikel yang paling berat dalam hal kinerja. </li>
+				</ul>
+
+			</p>
+
 </div>
 
 <div id="managing_asset">
