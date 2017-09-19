@@ -266,7 +266,36 @@ collection: blog
 
 <div id="managing_asset">
 	<h1>Managing Your Assets</h1>
-	<p></p>
+	<p align="justify">
+		AssetManager membantu untuk memuat dan mengelola asset. Berikut cara yang disarankan untuk memuat asset:
+		<ul>
+			<li>Pemuatan resource dilakukan secara asinkron</li>
+			<li>Menyiman semua asset pada satu tempat</li>
+			<li>Memungkinkan transparently implement seperti cache </li>
+		</ul>
+	</p>
+
+	<p align="justify">
+		Untuk membuat AssetManager menggunakan code seperti berikut
+		<p style="margin-left: 5%">AssetManager manager = new AssetManager();</p>
+		Kemudian untuk meload asset menggunakan fungsi load()
+		<p style="margin-left: 5%">manager.load("data/mytexture.png", Texture.class);</p>
+	</p>
+	<p align="justify">
+		Jika asset masih dalam proses loading, maka kita wajib memanggil fungsi AssetManager.update(). Jika proses loading telah selesai, pangil manager.finishLoading();
+	</p>
+	<p align="justify">
+		Untuk mendapatkan asset dapat menggunakan fungsi get(); 
+		<p style="margin-left:5%">Texture tex = manager.get("data/mytexture.png", Texture.class);</p>
+	</p>
+	<p align="justify">
+		Apabila asset tidak terpakai lagi, dapat dibuang menggunakan fungsi unload()
+		<p style="margin-left: 5%">manager.unload("data/myfont.fnt");</p>
+		Jika ingin menghapus semua asset sekali panggil, gunakan fungsi clear() atau dispose()
+
+		<p style="margin-left: 5%">manager.clear();</p>
+		<p style="margin-left: 5%">manager.dispose();</p>
+	</p>
 </div>
 
 <div id="inter_local">
