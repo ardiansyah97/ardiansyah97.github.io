@@ -1,10 +1,10 @@
 ---
-title: "GO Indonesia - High Concept Document"
+title: "GO Indonesia! - High Concept Document"
 excerpt: ""
 collection: blog
 ---
 
-## <center>GO Indonesia!</center>
+## <left>Keong Emas</left>
 
 
 <p align="justify">Target audience: 8++
