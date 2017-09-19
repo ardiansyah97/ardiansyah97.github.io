@@ -5,6 +5,7 @@ collection: blog
 ---
 
 <center><img style="margin-top:2%; margin-bottom:2%" src='/images/libgdx.png'></center>
+<br><br>
 
 <div id="app_framework">
 	<h1 style="color:blue;">The Application Framework</h1>
@@ -502,7 +503,7 @@ collection: blog
 			Jnigen adalah perpustakaan kecil yang bisa digunakan dengan atau tanpa libgdx yang memungkinkan kode C / C ++ untuk ditulis sejajar dengan kode sumber Java. Hal ini meningkatkan lokalitas kode yang dimiliki bersama secara konseptual (metode kelas asli Jawa dan penerapan sebenarnya) dan membuat refactoring jauh lebih mudah dibandingkan dengan alur kerja JNI biasa.
 		</p>
 		<p align="justify">
-			<b>GWT<b><br>
+			<b>GWT</b><br>
 			Untuk menggunakan fungsi GWT ini tidak sama dengan cara menggunakan reflection pada umumnya. Jika ingin menggunakan GWT dan mengimplementasikan refleksi maka harus mengdeclare class mana yang ingin di refleksi. Saat mengkompilasi proyek HTML, LibGDX mengambil informasi itu dan menghasilkan cache refleksi yang berisi informasi tentang dan menyediakan akses ke konstruktor, bidang, dan metode kelas yang ditentukan. LibGDX kemudian menggunakan cache refleksi ini untuk mengimplementasikan refleksi api.
 		</p>
 
