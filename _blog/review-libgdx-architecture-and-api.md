@@ -27,7 +27,7 @@ collection: blog
 </div>
 
 <div id="input_handling">
-	<h1>Show Input Handling</h1>
+	<h1>Input Handling</h1>
 	<div>
 			<p align="justify">
 				Setiap platform memiliki input yang berbeda. Pada desktop input dapat berupa mouse dan keyboard. Hal yang sama juga berlaku untuk game browser. Di Android, mouse digantikan dengan touch screen. Android juga dapat mendapatkan input dari sensor yang ada di perangkatnya. Sekarang ini perangkat Android telah dilengkapi dengan berbagai sensor, seperti accelerometer, gyroscope, dan magnetic field sensor. </p>
