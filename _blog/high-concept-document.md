@@ -8,11 +8,11 @@ collection: blog
 
 
 <p align="justify">Target audience: 8++
-<br> Gamer type: Casual gamer</br>
-Target platform: Android</br>
-Genre: Adventure</br>
-Number of player: 1</br>
-Project release date: December 2017</p>
+<br> Gamer type: Casual gamer
+<br>Target platform: Android
+<br>Genre: Adventure
+<br>Number of player: 1
+<br>Project release date: December 2017</p>
 
 <div>
 <h3>High Concept Statement</h3>
