@@ -5,7 +5,8 @@ collection: blog
 ---
 
 ## <left>Keong Emas</left>
-
+<p align="justify">
+Retno, Ardiansyah, Aril, Angga, Aisyah, Anisah, Hada </p>
 
 <p align="justify">Target audience: 8++
 <br> Gamer type: Casual gamer
