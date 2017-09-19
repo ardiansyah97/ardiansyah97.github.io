@@ -24,21 +24,21 @@ collection: blog
 
 <h3>Feature Set</h3>
 		<p align="justify">
-- Level permainan menampilkan budaya dari setiap pulau Indonesia</br>
-- Koleksi Senjata, berupa senjata tradisional Indonesia</br>
-- Pembebasan aset budaya Indonesia dalam permainan</br>
-- High score</br>
-- Koleksi nyawa untuk bertahan hidup</p>
+- Level permainan menampilkan budaya dari setiap pulau Indonesia
+<br>- Koleksi Senjata, berupa senjata tradisional Indonesia
+<br>- Pembebasan aset budaya Indonesia dalam permainan
+<br>- High score
+<br>- Koleksi nyawa untuk bertahan hidup</p>
 	
 <h3>Team Roles</h3>
 		<p align="justify">
-Retno Wulandari as Designer</br>
-M. Ardiansyah as Senior Programmer</br>
-Aril Mulana as Programmer</br>
-Angga Arian as Programmer</br>
-Hada Aufa as Graphic and Sound Artist</br>
-Aisyah Naqiyyah as Graphic Artist</br>
-Anisah as Sound Artist</p>
+Retno Wulandari as Designer
+<br>M. Ardiansyah as Senior Programmer
+<br>Aril Mulana as Programmer
+<br>Angga Arian as Programmer
+<br>Hada Aufa as Graphic and Sound Artist
+<br>Aisyah Naqiyyah as Graphic Artist
+<br>Anisah as Sound Artist</p>
 
 <h3>The Competition</h3>
 		<p align="justify">
