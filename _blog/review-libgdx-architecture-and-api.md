@@ -4,8 +4,9 @@ excerpt: "<img style='margin-top:10px;' src='/images/libgdx.png'>"
 collection: blog
 ---
 
+<br>
 <center><img style="margin-top:2%; margin-bottom:2%" src='/images/libgdx.png'></center>
-<br><br>
+<br>
 
 <div id="app_framework">
 	<h1 style="color:blue;">The Application Framework</h1>
@@ -390,7 +391,6 @@ collection: blog
 
 <div id="graphics">
 	<h1 style="color:blue;">Graphics</h1>
-	<p></p>
 </div>
 
 <div id="managing_asset">
@@ -592,12 +592,62 @@ collection: blog
 
 <div id="tools">
 	<h1 style="color:blue;">Tools</h1>
-	<p></p>
+	<h2>Texture Packer</h2>
+		<p align="justify">
+			Dalam OpenGL, tekstur terikat, beberapa gambar selesai, tekstur lain terikat, lebih banyak gambar dilakukan, dll. Mengikat teksturnya relatif mahal, jadi sangat ideal untuk menyimpan banyak gambar lebih kecil pada gambar yang lebih besar, mengikat tekstur yang lebih besar. sekali, kemudian menarik sebagian dari itu berkali-kali. Ligdx mempunyai sebuah class yang bernama yang merupakan aplikasi command line yang mengemas banyak gambar yang lebih kecil ke gambar yang lebih besar. Ini menyimpan lokasi gambar yang lebih kecil sehingga mudah dikenali dengan nama dalam aplikasi Anda menggunakan kelas TextureAtlas.
+		</p>
+	<h2>Hiero</h2>
+		<p align="justify">
+			Hiero adalah perlengkapan yang berupa font.
+		</p>
+	<h2>2D Particle Editor</h2>
+		<p align="justify">
+			The libgdx 2D Particle Editor adalah alat yang ampuh untuk membuat efek partikel. <br>
+			Property panel elements : Active Button, Number, dan Chart
+		</p>
+
+		<p align="justify">
+			<b>Property</b>
+			<ul>
+				<li>Delay = Saat efek dimulai, pemancar ini tidak akan melakukan apapun selama milidetik ini. Ini bisa digunakan untuk menyinkronkan beberapa pemancar.</li>
+				<li>Duration = Berapa lama emitor akan memancarkan partikel. Perhatikan hal ini tidak sama dengan berapa lama partikel akan hidup.</li>
+				<li>Count = Kontrol jumlah partikel minimum yang harus selalu ada, dan jumlah partikel maksimal yang mungkin ada.</li>
+				<li>Emission = Berapa banyak partikel yang dikeluarkan pada setiap detik</li>
+				<li>Life = berapa lama partikel hidup.</li>
+				<li>Life offset = Berapa banyak kehidupan yang habis ketika sebuah partikel muncul</li>
+				<li>X Offset dan Y Offset= Jumlah dalam piksel untuk mengimbangi dimana partikel muncul.</li>
+				<li>Spawn= Bentuk yang digunakan untuk meuncul, partikel: titik, garis, persegi, atau elips. Ellipse memiliki pengaturan tambahan.</li>
+				<li>Spawn Width dan Spawn Height= Mengontrol ukuran dari bentuk muncul.</li>
+				<li>Size = ukuran dari partikel</li>
+				<li>Velocity  = kecepatan dari sebuah partikel</li>
+				<li>Angel = Arah partikel bergerak. Tidak terlalu berguna jika kecepatan tidak aktif.</li>
+				<li>Rotation = perputaran dari sebuah partikel.</li>
+				<li>Wind dan Gravity= Sumbu sumbu x atau sumbu y untuk diterapkan pada partikel, dalam piksel per detik.</li>
+				<li>Tint =  Warna partikel. Klik segitiga kecil lalu gunakan slider untuk mengganti warnanya. Klik di bilah di atas segitiga untuk menambahkan lebih banyak segitiga. Hal ini memungkinkan Anda membuat partikel berubah menjadi sejumlah warna selama masa pakainya. Klik dan seret untuk memindahkan segitiga (jika tidak di awal atau akhir). Klik dua kali untuk menghapus.</li>
+				<li>Transparency =  Mengontrol alfa partikel. Bagan ini berbeda dari yang lain karena Anda tidak dapat memodifikasi rentang vertikalnya. Itu selalu dari 0 sampai 1.</li>
+			</ul>
+		</p>
+	<h2>Path Editor</h2>
 </div>
 
 <div id="extentions">
 	<h1 style="color:blue;">Extentions</h1>
-	<p></p>
+	<h2>Artificial Intelligence</h2>
+		<p align="justify">
+			
+		</p>
+	<h2>gdx-freetype</h2>
+		<p align="justify">
+
+		</p>
+	<h2>gdx-pay</h2>
+		<p align="justify">
+			Gdx-pay bertujuan untuk menyediakan cross-platform API untuk in-app purchasing
+		</p>
+	<h2>Physics</h2>
+		<p align="justify">
+			LibGdx mempunyai 2 physic library yang berbeda, Box2D dan Bullet. Box2D untuk 2D physic dan Bullet untuk 3D physic
+		</p>
 </div>
 
 <div id="third_party">
