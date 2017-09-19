@@ -743,22 +743,24 @@ collection: blog
 
 <div id="extentions">
 	<h1 style="color:blue;">Extentions</h1>
-	<h2>Artificial Intelligence</h2>
-		<p align="justify">
-			
-		</p>
-	<h2>gdx-freetype</h2>
-		<p align="justify">
+	<ul>
+		<li>Artificial Intelligence</li>
+			<p align="justify">
+				
+			</p>
+		<li>gdx-freetype</li>
+			<p align="justify">
 
-		</p>
-	<h2>gdx-pay</h2>
-		<p align="justify">
-			Gdx-pay bertujuan untuk menyediakan cross-platform API untuk in-app purchasing
-		</p>
-	<h2>Physics</h2>
-		<p align="justify">
-			LibGdx mempunyai 2 physic library yang berbeda, Box2D dan Bullet. Box2D untuk 2D physic dan Bullet untuk 3D physic
-		</p>
+			</p>
+		<li>gdx-pay</li>
+			<p align="justify">
+				Gdx-pay bertujuan untuk menyediakan cross-platform API untuk in-app purchasing
+			</p>
+		<li>Physics</li>
+			<p align="justify">
+				LibGdx mempunyai 2 physic library yang berbeda, Box2D dan Bullet. Box2D untuk 2D physic dan Bullet untuk 3D physic
+			</p>
+	</ul>
 </div>
 
 <div id="third_party">
