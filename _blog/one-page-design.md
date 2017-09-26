@@ -46,6 +46,5 @@ collection: blog
 	
 <h3>Controls</h3>
 	<p align="justify">
-	Game ini bertemakan petualangan berkeliling Indonesia sekaligus melawan musuh. Di sini pemain akan merasakan berada di pulau-pulau Indonesia, dengan setting yang menggambarkan landmark di setiap pulau tersebut, misal ketika berada di Jawa, pemain akan menemukan Monas, Candi, Keraton, dan lain sebagainya. Pemain akan merasakan keunikan dari tiap tempat yang disambangi.
 	</p>
 </div>
