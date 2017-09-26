@@ -3,3 +3,6 @@ title: "GO Indonesia! - Design Template, Story Bible Template, and Ctaylor Desig
 excerpt: ""
 collection: blog
 ---
+
+One Page Design:
+https://ardiansyah97.github.io/blog/one-page-design/
