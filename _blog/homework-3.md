@@ -5,4 +5,7 @@ collection: blog
 ---
 
 One Page Design:
-https://ardiansyah97.github.io/blog/one-page-design/
+<br>https://ardiansyah97.github.io/blog/one-page-design/
+
+Story Bible:
+<br>https://ardiansyah97.github.io/blog/story-bible/
