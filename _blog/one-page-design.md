@@ -46,5 +46,6 @@ collection: blog
 	
 <h3>Controls</h3>
 	<p align="justify">
+		<img src="/images/controller.jpeg" width="600px" height="400px">
 	</p>
 </div>
