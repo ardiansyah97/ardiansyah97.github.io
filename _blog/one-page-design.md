@@ -14,7 +14,7 @@ collection: blog
 
 <h3>Concept Sketch</h3>
 	<p align="justify">
-		<img src="/images/concept_sketch.jpeg" width="800px" height="500px">
+		<img src="/images/concept_sketch.jpeg" width="600px" height="400px">
 	</p>
 
 <h3>Goal + Description</h3>
